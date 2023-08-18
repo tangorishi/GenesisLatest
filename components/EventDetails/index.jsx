@@ -72,7 +72,7 @@ const EventDetails = (props) => {
       </Box>
       </Center>
       <Center>
-      <Text fontSize={["xl", "3xl", "5xl"]}
+        {/* <Text fontSize={["xl", "3xl", "5xl"]}
                 py={"4"}
                 pt={"6"}
                 maxW={"800"}
@@ -80,11 +80,11 @@ const EventDetails = (props) => {
                 letterSpacing={3.0}
                 style={{"text-align": "left"}}>
                   Register Here for {props.title}
-                </Text>
+                </Text> */}
       </Center>
       <Center>
       <Box mb={"10"}>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgZVRZLUTzaBUdIe4yzNUE_JF2sJ-gink1HZqsupQDaugD0A/viewform?embedded=true" width="1000" height="1200" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+        {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScgZVRZLUTzaBUdIe4yzNUE_JF2sJ-gink1HZqsupQDaugD0A/viewform?embedded=true" width="1000" height="1200" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe> */}
       
       </Box>
       </Center>
