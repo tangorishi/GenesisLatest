@@ -4,7 +4,7 @@ const events = [
     redirect: "11",
     image:
       "https://images.prismic.io/ieeemuj/bf314cf8-b946-473c-95cd-2cc1477925ad_Ballistic+2.0.png?auto=compress,format",
-    title: "Ballistic 2.0",
+    title: "Ballistic 3.0",
     desc: "Gaming competition between 2 teams. Games- Fifa 21 and Mortal Kombat",
     s_desc: "Gaming competition between 2 teams. Games- Fifa 21 and Mortal Kombat",
     dates: "7th-8th October",

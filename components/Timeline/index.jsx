@@ -7,7 +7,7 @@ const Timeline = () => {
   return (
     <Box px={10} mx={6}>
       <FadeInUp>
-        <SimpleGrid columns={[1, 1, 1, 2, 3]} spacingX={"1.2rem"} px={"13vw"}>
+        <SimpleGrid columns={[1, 1, 1, 2, 3]} spacingX={"2rem"} px={"11vw"}>
           {events.map((res) => (
             <Card
               key={res.key}

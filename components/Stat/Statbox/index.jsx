@@ -28,11 +28,11 @@ const StatBox = ({ numtext, subtext, visible }) => {
 
   return (
     <Box
-      p={"5rem"}
+      p={"2.5rem"}
       mt={"-2rem"}
       rounded="lg"
       border="2px solid"
-      borderColor={"lightblue"}
+      borderColor={"white"}
     //   borderColor={"gray.700"}
       //   borderColor="gray.200"
       //   css={{ backdropFilter: "blur(8px)" }}

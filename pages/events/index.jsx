@@ -37,13 +37,15 @@ const Events = () => {
                 mt={"25vh"}
                 fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 letterSpacing={15.0}
+                fontFamily="serif"
               >
-                EVENTS @ GENESIS
+                EVENTS @ GENESIS 3.0
               </Text>
               <Text
                 pt={"5rem"}
                 fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
                 letterSpacing={5.0}
+                fontFamily="serif"
               >
                 FASTEN YOUR SEATBELTS AND HOLD TIGHT. MAKE SURE YOU DO NOT MISS
                 ANY OF THE UPCOMING EVENTS
@@ -99,7 +101,7 @@ const Events = () => {
             </Wrap>
           </Flex>
         </Stack>
-      </Box> */}
+            </Box> */}
       <Footer />
     </ChakraProvider>
   );

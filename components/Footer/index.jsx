@@ -12,7 +12,6 @@ import {
   VisuallyHidden,
 } from "@chakra-ui/react";
 import { FaInstagram, FaGoogle, FaGithub } from "react-icons/fa";
-// import { Link } from "next/link";
 
 const SocialButton = ({ children, label, href }) => {
   return (
@@ -20,16 +19,17 @@ const SocialButton = ({ children, label, href }) => {
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
       rounded={"full"}
       w={8}
-      h={"3vh"}
+      h={8}
       cursor={"pointer"}
       as={"a"}
       href={href}
       display={"inline-flex"}
       alignItems={"center"}
       justifyContent={"center"}
-      transition={"background 0.3s ease"}
+      transition={"transform 0.3s ease"} // Added transition property for the transform
       _hover={{
         bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        transform: "translateY(-10px)", // Levitate effect
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -47,7 +47,7 @@ export default function Footer() {
         bottom={0}
         left={0}
         right={0}
-        position={"absoulte"}
+        position={"absolute"}
       >
         <Container
           as={Stack}
@@ -60,7 +60,7 @@ export default function Footer() {
         >
           <Flex>
             <Text>© 2022</Text>
-            <Link href="https://ieeemuj.com/" px={"1rem"}>IEEE MUJ</Link>
+            <Link href="https://ieeemuj.com/" px={"1rem"}>IE MUJ</Link>
             <Text> All rights reserved</Text>
           </Flex>
           <Stack direction={"row"} spacing={6}>

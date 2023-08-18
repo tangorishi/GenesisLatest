@@ -10,21 +10,22 @@ import FooterSectionLink from "./FooterSectionLink";
 import FooterSectionSocialIcon from "./FooterSectionSocialIcon";
 import FooterSectionSocialLink from "./FooterSectionSocialLink";
 import NextLink from "../../NextLink";
-import genesisLogo from "../../../public/imgs/footerlogo.png";
-import ieeeLogo from "../../../public/imgs/logo.png";
-import ieeecsLogo from "../../../public/imgs/ieeecs.svg";
-import ieeewieLogo from "../../../public/imgs/ieeewie.svg";
-import ieeerasLogo3 from "../../../public/imgs/ieeerasLogo3.png";
+import genesisLogo from "../../../pages/public/imgs/genesis-logo-only.png";
+import ieeeLogo from "../../../pages/public/imgs/logo.png";
+import ieeecsLogo from "../../../pages/public/imgs/ieeecs.svg";
+import ieeewieLogo from "../../../pages/public/imgs/ieeewie.svg";
+import ieeerasLogo3 from "../../../pages/public/imgs/ieeerasLogo3.png";
 const Footer = () => (
   <>
     <Box
-      bgColor="transparent"
+      bgColor="#080c2c"
       width="100%"
+      backgroundImage="url(/svg/footer.svg)"
       backgroundAttachment="fixed"
       backgroundPosition="center"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
-      paddingTop="40px"
+      paddingTop="50px"
       paddingBottom="20px"
     >
       <FadeInUp>
@@ -39,11 +40,11 @@ const Footer = () => (
           >
             <VStack width={["100%", "100%", "100%", "100%", "100%"]}>
               <HStack>
-                <NextImage src={genesisLogo} alt="Genesis Logo" />
-                <NextImage src={ieeeLogo} alt="IEEE SB MUJ Logo" />
-                <NextImage src={ieeecsLogo} alt="IEEE CS Logo" />
-                <NextImage src={ieeewieLogo} alt="IEEE WIE Logo" />
-                <NextImage src={ieeerasLogo3} alt="IEEE RAS LOGO"/>
+                <NextImage src={genesisLogo} alt="Genesis Logo" height={300} width={250}/>
+                <NextImage src={ieeeLogo} alt="IEEE SB MUJ Logo" height={150} width={450}/>
+                <NextImage src={ieeecsLogo} alt="IEEE CS Logo" height={150} width={450}/>
+                <NextImage src={ieeewieLogo} alt="IEEE WIE Logo" height={180} width={200}/>
+                <NextImage src={ieeerasLogo3} alt="IEEE RAS LOGO" height={140} width={300}/>
               </HStack>
 
               <HStack width="100%" height="100px">
@@ -52,7 +53,7 @@ const Footer = () => (
                   href="https://www.instagram.com/genesismuj"
                   underline
                 >
-                  Genesis
+                  Genesis 
                 </FooterSectionSocialLink>
                 <FooterSectionSocialLink
                   icon={<FooterSectionSocialIcon icon={FaInstagram} />}
@@ -78,39 +79,62 @@ const Footer = () => (
               </HStack>
             </VStack>
             <VStack width="100%" spacing={10}>
-              <FooterSection>
-                <FooterSectionHeading>Contact Us</FooterSectionHeading>
-                <FooterSectionContact
-                  number="+919999214243"
-                  name="Aarohi Manchanda"
-                >
-                  +91 99992 14243
-                </FooterSectionContact>
-                <FooterSectionContact number="+917073189955" name="Mahi Jain">
-                  +91 70731 89955
-                </FooterSectionContact>
-                <FooterSectionLink href="mailto:ieee@muj.manipal.edu">
-                  Email Us
-                </FooterSectionLink>
-              </FooterSection>
-            </VStack>
-            <VStack width="100%" spacing={10}>
-              <FooterSection>
-                <FooterSectionHeading>Links</FooterSectionHeading>
-                <NextLink color="white" to="http://jaipur.manipal.edu/">
-                  MUJ Official Website
-                </NextLink>
-                <NextLink color="white" to="http://www.ieeemuj.com">
-                  IEEE MUJ Website
-                </NextLink>
-              </FooterSection>
-            </VStack>
+  <FooterSection>
+    <FooterSectionHeading>Contact Us</FooterSectionHeading>
+    <HStack spacing={10}>
+      <FooterSectionContact number="+919721490618" name="Sriansh Raj">
+        +91 97214 90618
+      </FooterSectionContact>
+      <FooterSectionContact number="+919111008100" name="Sonakshi Arora">
+        +91 91110 08100
+      </FooterSectionContact>
+    </HStack>
+    <HStack spacing={10}>
+      <FooterSectionContact number="+918920287032" name="Yuvraj Vasudeva">
+        +91 89202 87032
+      </FooterSectionContact>
+      <FooterSectionContact number="+919427596868" name="Dev Agrawal">
+        +91 94275 96868
+      </FooterSectionContact>
+    </HStack>
+    {/* <FooterSectionLink href="mailto:ieee@muj.manipal.edu">
+      Email Us
+    </FooterSectionLink> */}
+  </FooterSection>
+</VStack>
+
+
+<VStack width="100%" spacing={10}>
+  <FooterSection>
+    <FooterSectionHeading>
+      <NextLink color="white" to="http://jaipur.manipal.edu/">
+        MUJ Official Website
+      </NextLink>
+    </FooterSectionHeading>
+    <FooterSectionHeading>
+      <NextLink color="white" to="http://www.ieeemuj.com">
+        IEEE SB MUJ Website
+      </NextLink>
+    </FooterSectionHeading>
+    <FooterSectionHeading>
+      <NextLink color="white" to="https://cs.ieeemuj.com/">
+        IEEE CS MUJ Website
+      </NextLink>
+    </FooterSectionHeading>
+    <FooterSectionHeading>
+      <NextLink color="white" to="https://wie.ieeemuj.com/">
+        IEEE WIE MUJ Website
+      </NextLink>
+    </FooterSectionHeading>
+  </FooterSection>
+</VStack>
+
           </Stack>
         </ResponsiveContainer>
       </FadeInUp>
     </Box>
-    <Flex
-      bgColor="transparent"
+  { /* <Flex
+      bgColor="#080c2c"
       width="100%"
       height="32px"
       textAlign="center"
@@ -121,9 +145,9 @@ const Footer = () => (
       fontFamily="monospace"
     >
       <Text width="100%" fontSize="sm">
-        MADE WITH ❤️ TEAM GENESIS
+        MADE WITH ❤️ USING OPEN SOURCE
       </Text>
-    </Flex>
+    </Flex> */ }
   </>
 );
 

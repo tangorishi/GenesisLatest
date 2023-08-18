@@ -468,6 +468,31 @@ const TeamMembers = () => {
           ) : null
         )}
       </SimpleGrid>
+
+
+      <Text
+        fontSize={{ base: "xl", md: "2xl", lg: "3xl" }}
+        letterSpacing={5}
+        mx={"15vw"}
+      >
+        Core Committee - Social Media
+      </Text>
+      <SimpleGrid columns={[1, 1, 2, 3, 4]} spacingX={"1rem"} px={"12vw"}>
+        {members.map((res) =>
+          res.team.toLowerCase() === "ccmedia" ? (
+            <Card
+              name={res.name}
+              image={res.image}
+              position={res.position}
+              team={res.team}
+              github={res.github}
+              linkedin={res.linkedin}
+              behance={res.behance}
+              instagram={res.instagram}
+            />
+          ) : null
+        )}
+      </SimpleGrid>
     </Box>
   );
 };

@@ -10,7 +10,7 @@ const FooterSectionLink = ({ underline, href, children }) => (
     rel="noreferrer"
   >
     <Text
-      color="white"
+      color="lightblue"
       size="sm"
       fontFamily="monospace"
     >

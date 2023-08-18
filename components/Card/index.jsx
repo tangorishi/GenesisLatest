@@ -26,13 +26,13 @@ export default function Card(props) {
   const redirect = props.redirect;
   console.log(linkGH);
   return (
-    <Center py={6}>
+    <Center py={5}>
       <Box
         maxW={"375px"}
         minW={"300px"}
-        minH={"550px"}
+        minH={"450px"} /*550*/
         w={"full"}
-        borderRadius={"10px"}
+        borderRadius={"20px"}
         bg={useColorModeValue("white", "gray.900")}
         boxShadow={"2xl"}
         p={6}
@@ -53,7 +53,7 @@ export default function Card(props) {
           ></Box>
         </Center>
         <Stack px={"6"} paddingBottom={"1rem"}>
-          <Text
+          {/* <Text
             color={"green.500"}
             textTransform={"uppercase"}
             fontWeight={800}
@@ -62,9 +62,8 @@ export default function Card(props) {
             letterSpacing={1.7}
           >
             <Badge variant="outline" colorScheme={status_color}>
-              {status} | {type}
-            </Badge>
-          </Text>
+              {status} </Badge>
+          </Text> */}
           <hr />
           <Box>
           <Flex alignItems={"center"}>
@@ -73,7 +72,7 @@ export default function Card(props) {
             </Text>
           </Flex>
           </Box>
-          {date?"":<Link href={form}><Button colorScheme="messenger" variant="outline" width={"100%"}  _hover={{ color:'white', bgColor:'#0063D1'}}>Register</Button></Link>}
+          {date?"":<Link href={form}><Button colorScheme="messenger" variant="outline" width={"100%"}  _hover={{ color:'white', bgColor:'#080c2c'}}>Register</Button></Link>}
           {date?"":<Link href={`/events/${title}`}><Button width={"100%"}>Learn More</Button></Link>}
         </Stack>
         <Text color={"gray.500"} px={"6"}>
