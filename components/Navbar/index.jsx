@@ -22,7 +22,7 @@ import NavLink from "./NavLink";
 
 const NavLinks = ({ closeMenu }) => (
   <>
-      <NavLink to="/home" onClick={closeMenu}>
+      <NavLink to="/" onClick={closeMenu}>
       <Text
         fontSize={["md", "md", "md", "md", "md"]}
         fontWeight={"800"}
