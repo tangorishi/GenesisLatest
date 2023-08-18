@@ -20,14 +20,14 @@ const SocialButton = ({ children, label, href }) => {
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
       rounded={"full"}
       w={8}
-      h={"1vh"}
+      h={"3vh"}
       cursor={"pointer"}
       as={"a"}
       href={href}
       display={"inline-flex"}
       alignItems={"center"}
       justifyContent={"center"}
-      transition={"background s ease"}
+      transition={"background 0.3s ease"}
       _hover={{
         bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
       }}
@@ -60,7 +60,7 @@ export default function Footer() {
         >
           <Flex>
             <Text>© 2022</Text>
-            <Link href="https://ieeemuj.com/" px={"1rem"}>IE MUJ</Link>
+            <Link href="https://ieeemuj.com/" px={"1rem"}>IEEE MUJ</Link>
             <Text> All rights reserved</Text>
           </Flex>
           <Stack direction={"row"} spacing={6}>

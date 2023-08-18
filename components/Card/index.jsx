@@ -30,7 +30,7 @@ export default function Card(props) {
       <Box
         maxW={"375px"}
         minW={"300px"}
-        minH={"650px"}
+        minH={"550px"}
         w={"full"}
         borderRadius={"10px"}
         bg={useColorModeValue("white", "gray.900")}
@@ -62,7 +62,7 @@ export default function Card(props) {
             letterSpacing={1.7}
           >
             <Badge variant="outline" colorScheme={status_color}>
-              {status}  {/*| {type} */}
+              {status} | {type}
             </Badge>
           </Text>
           <hr />

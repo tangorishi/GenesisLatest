@@ -61,7 +61,7 @@ const events = [
     dates: "",
     time: "",
     team_size: "4",
-    prize: "2000",
+    prize: "",
     form: "https://forms.gle/ygdVqhfu755FuoUUA",
     venue: "",
     type: 'type',

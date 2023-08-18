@@ -17,7 +17,7 @@ const FooterSectionContact = ({ number, name, children }) => (
       </Text>
     </a>
     <Text
-      color="lightblue"
+      color="white"
       size="sm"
       fontFamily="monospace"
     >

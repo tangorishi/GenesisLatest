@@ -10,22 +10,21 @@ import FooterSectionLink from "./FooterSectionLink";
 import FooterSectionSocialIcon from "./FooterSectionSocialIcon";
 import FooterSectionSocialLink from "./FooterSectionSocialLink";
 import NextLink from "../../NextLink";
-import genesisLogo from "../../../pages/public/imgs/footerlogo.png";
-import ieeeLogo from "../../../pages/public/imgs/logo.png";
-import ieeecsLogo from "../../../pages/public/imgs/ieeecs.svg";
-import ieeewieLogo from "../../../pages/public/imgs/ieeewie.svg";
-import ieeerasLogo3 from "../../../pages/public/imgs/ieeerasLogo3.png";
+import genesisLogo from "../../../public/imgs/footerlogo.png";
+import ieeeLogo from "../../../public/imgs/logo.png";
+import ieeecsLogo from "../../../public/imgs/ieeecs.svg";
+import ieeewieLogo from "../../../public/imgs/ieeewie.svg";
+import ieeerasLogo3 from "../../../public/imgs/ieeerasLogo3.png";
 const Footer = () => (
   <>
     <Box
-      bgColor="#080c2c"
+      bgColor="transparent"
       width="100%"
-      backgroundImage="url(/svg/footer.svg)"
       backgroundAttachment="fixed"
       backgroundPosition="center"
       backgroundSize="cover"
       backgroundRepeat="no-repeat"
-      paddingTop="50px"
+      paddingTop="40px"
       paddingBottom="20px"
     >
       <FadeInUp>
@@ -53,7 +52,7 @@ const Footer = () => (
                   href="https://www.instagram.com/genesismuj"
                   underline
                 >
-                  Genesis 
+                  Genesis
                 </FooterSectionSocialLink>
                 <FooterSectionSocialLink
                   icon={<FooterSectionSocialIcon icon={FaInstagram} />}
@@ -79,7 +78,6 @@ const Footer = () => (
               </HStack>
             </VStack>
             <VStack width="100%" spacing={10}>
-
               <FooterSection>
                 <FooterSectionHeading>Contact Us</FooterSectionHeading>
                 <FooterSectionContact
@@ -90,22 +88,21 @@ const Footer = () => (
                 </FooterSectionContact>
                 <FooterSectionContact number="+917073189955" name="Mahi Jain">
                   +91 70731 89955
-                  </FooterSectionContact>
+                </FooterSectionContact>
                 <FooterSectionLink href="mailto:ieee@muj.manipal.edu">
-                 Email Us
+                  Email Us
                 </FooterSectionLink>
               </FooterSection>
             </VStack>
             <VStack width="100%" spacing={10}>
               <FooterSection>
-                <FooterSectionHeading>
+                <FooterSectionHeading>Links</FooterSectionHeading>
                 <NextLink color="white" to="http://jaipur.manipal.edu/">
                   MUJ Official Website
                 </NextLink>
                 <NextLink color="white" to="http://www.ieeemuj.com">
                   IEEE MUJ Website
                 </NextLink>
-                </FooterSectionHeading>
               </FooterSection>
             </VStack>
           </Stack>
@@ -113,7 +110,7 @@ const Footer = () => (
       </FadeInUp>
     </Box>
     <Flex
-      bgColor="#080c2c"
+      bgColor="transparent"
       width="100%"
       height="32px"
       textAlign="center"
@@ -124,7 +121,7 @@ const Footer = () => (
       fontFamily="monospace"
     >
       <Text width="100%" fontSize="sm">
-        MADE WITH ❤️ USING OPEN SOURCE
+        MADE WITH ❤️ TEAM GENESIS
       </Text>
     </Flex>
   </>

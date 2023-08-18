@@ -5,8 +5,8 @@ const FooterSectionSocialLink = ({
   icon, underline, href, children,
 }) => (
   <Box
-    width="65%"
-    textAlign="centre"
+    width="100%"
+    textAlign="center"
   >
     {icon}
     <a
@@ -17,8 +17,7 @@ const FooterSectionSocialLink = ({
       rel="noreferrer"
     >
       <Text
-        color="lightblue"
-        fontWeight="sm"
+        color="white"
         size="sm"
         fontFamily="monospace"
       >

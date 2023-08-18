@@ -7,8 +7,8 @@ const FooterSectionSocialIcon = ({
     as={icon}
     w={6}
     h={6}
-    color="lightblue"
-    marginRight="10px"
+    color="white"
+    marginRight="8px"
   />
 );
 

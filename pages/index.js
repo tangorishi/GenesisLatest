@@ -1,7 +1,6 @@
 import Events from "../components/Events";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer/index";
-
 import {
   ChakraProvider,
   Text,
@@ -26,7 +25,8 @@ import Head from 'next/head';
 import Stat from "../components/Stat";
 import Timeline from "../components/Timeline";
 import Speaker from "../components/Speaker"
- { /*import FadeInUp from "../components/Anim/FadeInUp"; */}
+import FadeInUp from "../components/Anim/FadeInUp";
+
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
@@ -46,7 +46,7 @@ export default function Home() {
           playsInline={true}
         >
           <source
-          src="https://prismic-io.s3.amazonaws.com/ieeemuj/cf941ee8-de26-4688-a5cf-f46fc36e093d_genesis-new.mp4"
+          src="https://prismic-io.s3.amazonaws.com/ieeemuj/5df327d3-e65a-417d-9767-e12a70b2ef9b_genisis_vdo.mp4"
             // src="https://video-previews.elements.envatousercontent.com/h264-video-previews/8bc2eb2a-6288-46a0-9873-b1ffeefc00dd/37359639.mp4"
             type="video/mp4"
           />
@@ -92,11 +92,11 @@ export default function Home() {
           </ModalContent>
         </Modal>
       </Box>
-       { /*<FadeInUp> */}
+      <FadeInUp>
         <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}>
           <Flex p={8} flex={1} align={"center"} justify={"center"}>
             <Stack spacing={6} w={"full"} align={"center"}>
-              {/* <Text
+              <Text
                 fontSize={{ base: "3xl", md: "5xl", lg: "70px" }}
                 letterSpacing={15.0}
                 backgroundColor={"#fff"}
@@ -104,7 +104,7 @@ export default function Home() {
                 color={"black"}
               >
                 
-              </Text> */}
+              </Text>
               {/* <Text
                 fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
                 letterSpacing={5.5}
@@ -122,26 +122,26 @@ export default function Home() {
           </Flex>
         </Stack>
         <Stat />
-        <Box bgColor={"white"} style={{marginBottom:"0"}}>
+        <Box bgColor={"white"}>
           <Text fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 letterSpacing={5.5}
                 backgroundColor={"#fff"}
                 color={"black"}
                 textAlign={"center"}
-                padding={"3rem 0 0.1rem 0"}><b>Our Events</b></Text>
+                padding={"3rem 0 0.1rem 0"}><b>Upcoming Events</b></Text>
         <Timeline />
         </Box>
         <Stack>
-       { /* <Text fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
+        <Text fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 letterSpacing={5.5}
                 backgroundColor={"#fff"}
                 color={"black"}
                 textAlign={"center"}
-            padding={"3rem 0 0.1rem 0"}><b>Past IEEE Events</b></Text> */}
+                padding={"3rem 0 0.1rem 0"}><b>Past IEEE Events</b></Text>
           <Events />
         </Stack>
         {/* <Speaker/> */}
-        {/*  </FadeInUp> */}
+      </FadeInUp>
       <Footer />
     </ChakraProvider>
   );
