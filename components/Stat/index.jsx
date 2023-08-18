@@ -1,12 +1,15 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import StatGroup from "./StatGroup";
-
+import { Show, Hide } from '@chakra-ui/react'
 const Stat = () => {
   return (
-    <Box px={"10vw"} mb={"5rem"}>
-      <StatGroup />
-    </Box>
+    
+     <Hide below='md'>
+      <Box><StatGroup /></Box>
+     
+
+    </Hide> 
   );
 };
 
