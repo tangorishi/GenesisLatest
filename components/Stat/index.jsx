@@ -6,9 +6,9 @@ const Stat = () => {
   return (
 
      <Hide below='md'>
-      <Box><StatGroup /></Box>
-
-
+      <Box>
+        <StatGroup />
+      </Box>
     </Hide> 
   );
 };
