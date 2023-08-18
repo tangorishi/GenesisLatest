@@ -101,7 +101,7 @@ export default function Home() {
         </Stack>
         </Hide>
         <Hide above='md'>
-        <Stack minH={"15vh"} direction={{ base: "column", md: "row" }}>
+        <Stack minH={"20vh"} direction={{ base: "column", md: "row" }}>
           
         </Stack>
         </Hide>
