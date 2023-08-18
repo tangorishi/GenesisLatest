@@ -72,7 +72,7 @@ export default function Card(props) {
             </Text>
           </Flex>
           </Box>
-          {date?"":<Link href={form}><Button colorScheme="messenger" variant="outline" width={"100%"}  _hover={{ color:'white', bgColor:'#080c2c'}}>Register</Button></Link>}
+           {date?"":<Link href={form}><Button colorScheme="messenger" variant="outline" width={"100%"} color="#080c2c" borderColor='#080c2c' _hover={{ color: 'white', bgColor:'#080c2c'}}>Register</Button></Link>}
           {date?"":<Link href={`/events/${title}`}><Button width={"100%"}>Learn More</Button></Link>}
         </Stack>
         <Text color={"gray.500"} px={"6"}>
