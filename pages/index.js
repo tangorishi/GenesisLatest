@@ -12,6 +12,8 @@ import {
   Button,
   Box,
   useDisclosure,
+  Show,
+  Hide,
 } from "@chakra-ui/react";
 import {
   Modal,
@@ -93,36 +95,19 @@ export default function Home() {
         </Modal>
       </Box>
        { /*<FadeInUp> */}
+       <Hide below='md'>
         <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}>
-          <Flex p={8} flex={1} align={"center"} justify={"center"}>
-            <Stack spacing={6} w={"full"} align={"center"}>
-              {/* <Text
-                fontSize={{ base: "3xl", md: "5xl", lg: "70px" }}
-                letterSpacing={15.0}
-                backgroundColor={"#fff"}
-                px={"3rem"}
-                color={"black"}
-              >
-                
-              </Text> */}
-              {/* <Text
-                fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
-                letterSpacing={5.5}
-                backgroundColor={"#fff"}
-                color={"black"}
-                px={"3rem"}
-              >
-                IEEE MUJ brings to you the largest Tech Fest of Manipal
-                University Jaipur{" "}
-                <Code fontSize={{ base: "lg", md: "xl", lg: "2xl" }}>
-                  GENESIS 2022
-                </Code>
-              </Text> */}
-            </Stack>
-          </Flex>
+          
         </Stack>
+        </Hide>
+        <Hide above='md'>
+        <Stack minH={"20vh"} direction={{ base: "column", md: "row" }}>
+          
+        </Stack>
+        </Hide>
         <Stat />
-        <Box bgColor={"white"}>
+        {/* <Hide below='md'> */}
+        <Box bgColor={"white"} style ={{marginTop:"0rem"}}>
           <Text fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 letterSpacing={5.5}
                 backgroundColor={"#fff"}
@@ -131,6 +116,7 @@ export default function Home() {
                 padding={"3rem 0 0.1rem 0"}><b>Our Events</b></Text>
         <Timeline />
         </Box>
+        {/* </Hide> */}
         <Stack>
        { /* <Text fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 letterSpacing={5.5}
