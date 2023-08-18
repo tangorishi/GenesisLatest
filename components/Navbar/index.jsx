@@ -22,7 +22,7 @@ import NavLink from "./NavLink";
 
 const NavLinks = ({ closeMenu }) => (
   <>
-     {/* <NavLink to="/home" onClick={closeMenu}>
+      <NavLink to="/home" onClick={closeMenu}>
       <Text
         fontSize={["md", "md", "md", "md", "md"]}
         fontWeight={"800"}
@@ -38,8 +38,8 @@ const NavLinks = ({ closeMenu }) => (
       >
         HOME
       </Text>
-      </NavLink> */}
-      {/*<NavLink to="/events" onClick={closeMenu}>
+      </NavLink> 
+      <NavLink to="/events" onClick={closeMenu}>
       <Text
         fontSize={["md", "md", "md", "md", "md"]}
         fontWeight={"800"}
@@ -55,7 +55,7 @@ const NavLinks = ({ closeMenu }) => (
       >
         EVENTS
       </Text> 
-      </NavLink>  */}
+      </NavLink> 
      {/*<NavLink to="/sponsors" onClick={closeMenu}>
       <Text
         fontSize={["md", "md", "md", "md", "md"]}
