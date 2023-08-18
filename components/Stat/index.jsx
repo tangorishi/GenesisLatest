@@ -12,3 +12,5 @@ const Stat = () => {
     </Hide> 
   );
 };
+
+export default Stat;
