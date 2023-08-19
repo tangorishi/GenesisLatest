@@ -12,6 +12,7 @@ import {
   Button,
   Box,
   useDisclosure,
+  Hide,
 } from "@chakra-ui/react";
 import {
   Modal,
@@ -42,7 +43,7 @@ export default function Home() {
           id="bg-video"
           autoPlay={true}
           muted={true}
-          loop={true}
+          loop={false}
           playsInline={true}
         >
           <source
@@ -93,7 +94,9 @@ export default function Home() {
         </Modal>
       </Box>
        { /*<FadeInUp> */}
-        <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}>
+       <Stack minH={"15vh"} direction={{ base: "column", md: "row" }}></Stack>
+       <Hide below="md">
+        <Stack minH={"65vh"} direction={{ base: "column", md: "row" }}>
           <Flex p={8} flex={1} align={"center"} justify={"center"}>
             <Stack spacing={6} w={"full"} align={"center"}>
               {/* <Text
@@ -122,6 +125,7 @@ export default function Home() {
           </Flex>
         </Stack>
         <Stat />
+        </Hide>
         <Box bgColor={"white"}>
           <Text fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}
                 letterSpacing={5.5}
