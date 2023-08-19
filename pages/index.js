@@ -103,7 +103,7 @@ export default function Home() {
        <Flex p={8} flex={1} align={"center"} >
             <Stack spacing={6} w={"full"} align={"center"}>
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"3xl"}>Largest Tech Fest of MUJ</Text>
-               <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin' on Tech</Text>
+               <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin&apos; on Tech</Text>
             </Stack>
           </Flex>
        </Stack>
