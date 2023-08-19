@@ -1,6 +1,8 @@
 import Events from "../components/Events";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer/index";
+import Typewriter from 'typewriter-effect';
+
 
 import {
   ChakraProvider,
@@ -13,6 +15,8 @@ import {
   Box,
   useDisclosure,
   Hide,
+  Heading,
+  Show,
 } from "@chakra-ui/react";
 import {
   Modal,
@@ -27,6 +31,7 @@ import Head from 'next/head';
 import Stat from "../components/Stat";
 import Timeline from "../components/Timeline";
 import Speaker from "../components/Speaker"
+import FadeInUp from "../components/Anim/FadeInUp";
  { /*import FadeInUp from "../components/Anim/FadeInUp"; */}
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -94,36 +99,30 @@ export default function Home() {
         </Modal>
       </Box>
        { /*<FadeInUp> */}
-       <Stack minH={"15vh"} direction={{ base: "column", md: "row" }}></Stack>
-       <Hide below="md">
-        <Stack minH={"65vh"} direction={{ base: "column", md: "row" }}>
-          <Flex p={8} flex={1} align={"center"} justify={"center"}>
+       {/* <Stack minH={"10vh"} direction={{ base: "column", md: "row" }}></Stack> */}
+       <Show below="md">
+       <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} backgroundColor={"#080c2c"}>
+       <Flex p={8} flex={1} align={"center"} >
             <Stack spacing={6} w={"full"} align={"center"}>
-              {/* <Text
-                fontSize={{ base: "3xl", md: "5xl", lg: "70px" }}
-                letterSpacing={15.0}
-                backgroundColor={"#fff"}
-                px={"3rem"}
-                color={"black"}
-              >
-                
-              </Text> */}
-              {/* <Text
-                fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
-                letterSpacing={5.5}
-                backgroundColor={"#fff"}
-                color={"black"}
-                px={"3rem"}
-              >
-                IEEE MUJ brings to you the largest Tech Fest of Manipal
-                University Jaipur{" "}
-                <Code fontSize={{ base: "lg", md: "xl", lg: "2xl" }}>
-                  GENESIS 2022
-                </Code>
-              </Text> */}
+              <FadeInUp>
+               {/* <Heading as="h1" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech Fest of MUJ</Heading> */}
+               <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"3xl"}>Largest Tech Fest of MUJ</Text>
+               <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin' on Tech</Text>
+               <Typewriter
+  options={{
+    strings: ['Hello', 'World'],
+    autoStart: true,
+    loop: true,
+  }}
+/>
+               {/* <Heading as="h6" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech </Heading> */}
+               </FadeInUp>
             </Stack>
           </Flex>
-        </Stack>
+       </Stack>
+       </Show>
+       <Hide below="md">
+       <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}></Stack>
         <Stat />
         </Hide>
         <Box bgColor={"white"}>
