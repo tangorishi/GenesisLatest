@@ -20,7 +20,7 @@ const Team = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar />
-      <FadeInUp>
+      {/* <FadeInUp> */}
         <Stack minH={"65vh"} direction={{ base: "column", md: "row" }}>
           <Flex p={8} flex={1}>
             <Stack spacing={6} w={"full"} align={"center"}>
@@ -41,11 +41,11 @@ const Team = () => {
             </Stack>
           </Flex>
         </Stack>
-      </FadeInUp>
+      {/* </FadeInUp> */}
 
-      <FadeInUp>
+      {/* <FadeInUp> */}
         <TeamMembers />
-      </FadeInUp>
+      {/* </FadeInUp> */}
       <Footer />
     </ChakraProvider>
   );
