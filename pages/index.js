@@ -104,7 +104,7 @@ export default function Home() {
        <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} backgroundColor={"#080c2c"}>
        <Flex p={8} flex={1} align={"center"} >
             <Stack spacing={6} w={"full"} align={"center"}>
-              <FadeInUp>
+              {/* <FadeInUp> */}
                {/* <Heading as="h1" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech Fest of MUJ</Heading> */}
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"3xl"}>Largest Tech Fest of MUJ</Text>
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin' on Tech</Text>
@@ -116,7 +116,7 @@ export default function Home() {
   }}
 /> */}
                {/* <Heading as="h6" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech </Heading> */}
-               </FadeInUp>
+               {/* </FadeInUp> */}
             </Stack>
           </Flex>
        </Stack>
