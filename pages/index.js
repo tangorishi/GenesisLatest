@@ -101,10 +101,10 @@ export default function Home() {
        <Show below="md">
        <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} backgroundColor={"#080c2c"}>
        <Flex p={8} flex={1} align={"center"} >
-            {/* <Stack spacing={6} w={"full"} align={"center"}>
+            <Stack spacing={6} w={"full"} align={"center"}>
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"3xl"}>Largest Tech Fest of MUJ</Text>
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin' on Tech</Text>
-            </Stack> */}
+            </Stack>
           </Flex>
        </Stack>
        </Show>
