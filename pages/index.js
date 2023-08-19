@@ -1,7 +1,7 @@
 import Events from "../components/Events";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer/index";
-// import Typewriter from 'typewriter-effect';
+import { useTypewriter } from 'react-simple-typewriter'
 
 
 import {
@@ -35,6 +35,11 @@ import FadeInUp from "../components/Anim/FadeInUp";
  { /*import FadeInUp from "../components/Anim/FadeInUp"; */}
 export default function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [text] = useTypewriter({
+    words: ["Trippin' on Tech"],
+    loop: 1,
+    typeSpeed: 300,
+  })
   return (
     <ChakraProvider theme={theme}>
       <Head>
@@ -103,7 +108,7 @@ export default function Home() {
        <Flex p={8} flex={1} align={"center"} >
             <Stack spacing={6} w={"full"} align={"center"}>
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"3xl"}>Largest Tech Fest of MUJ</Text>
-               <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin&apos; on Tech</Text>
+               <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>{text}</Text>
             </Stack>
           </Flex>
        </Stack>
