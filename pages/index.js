@@ -1,7 +1,7 @@
 import Events from "../components/Events";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer/index";
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
 
 
 import {
@@ -108,13 +108,13 @@ export default function Home() {
                {/* <Heading as="h1" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech Fest of MUJ</Heading> */}
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"3xl"}>Largest Tech Fest of MUJ</Text>
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin' on Tech</Text>
-               <Typewriter
+               {/* <Typewriter
   options={{
     strings: ['Hello', 'World'],
     autoStart: true,
     loop: true,
   }}
-/>
+/> */}
                {/* <Heading as="h6" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech </Heading> */}
                </FadeInUp>
             </Stack>
