@@ -98,29 +98,16 @@ export default function Home() {
           </ModalContent>
         </Modal>
       </Box>
-       { /*<FadeInUp> */}
-       {/* <Stack minH={"10vh"} direction={{ base: "column", md: "row" }}></Stack> */}
-       <Show below="md">
+       {/* <Show below="md">
        <Stack minH={"100vh"} direction={{ base: "column", md: "row" }} backgroundColor={"#080c2c"}>
        <Flex p={8} flex={1} align={"center"} >
             <Stack spacing={6} w={"full"} align={"center"}>
-              {/* <FadeInUp> */}
-               {/* <Heading as="h1" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech Fest of MUJ</Heading> */}
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"3xl"}>Largest Tech Fest of MUJ</Text>
                <Text textAlign={"center"} fontWeight={"bold"} textColor={"white"} fontSize={"4xl"}>Trippin' on Tech</Text>
-               {/* <Typewriter
-  options={{
-    strings: ['Hello', 'World'],
-    autoStart: true,
-    loop: true,
-  }}
-/> */}
-               {/* <Heading as="h6" size="xl" textAlign={"center"} fontWeight={"bold"} textColor={"white"}>Largest Tech </Heading> */}
-               {/* </FadeInUp> */}
             </Stack>
           </Flex>
        </Stack>
-       </Show>
+       </Show> */}
        <Hide below="md">
        <Stack minH={"80vh"} direction={{ base: "column", md: "row" }}></Stack>
         <Stat />
